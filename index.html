@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generating Progress card through reading data from user.</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h3>Student Details - Progress Card Generator</h3>
+    <ul class="formContainer">
+      <li>Student Name: <input type="text" id="sname" /></li>
+      <li>
+        Class:
+        <select name="" id="sclass">
+          <option>Class I</option>
+          <option>Class II</option>
+          <option>Class III</option>
+          <option>Class IV</option>
+          <option>Class V</option>
+        </select>
+      </li>
+      <li>
+        Languages Student know:
+        <input type="checkbox" value="Eng" id="lng_eng" /> English
+        <input type="checkbox" value="Tel" id="lng_tel" /> Telugu
+        <input type="checkbox" value="Hin" id="lng_hin" /> Hindi
+      </li>
+      <li>
+        Gender:
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+      </li>
+      <li class="marksContainer">
+        Marks:
+        <input type="text" id="m1" />
+        <input type="text" id="m2" />
+        <input type="text" id="m3" />
+        <input type="text" id="m4" />
+        <input type="text" id="m5" />
+      </li>
+      <li>
+        <input
+          type="button"
+          value="Generate Progress Card"
+          onclick="readUserData()"
+        />
+      </li>
+    </ul>
+
+    <ul class="progressCardBlock">
+      <li class="progressTitle">Student Progress Card</li>
+      <li>Student Name is : <span id="dsname"></span></li>
+      <li>Student Gender is : <span id="dgender"></span></li>
+      <li>Student Class is : <span id="dclass"></span></li>
+      <li>Student total is : <span id="dtotal"></span></li>
+      <li>Student Avg is : <span id="davg"></span></li>
+      <li>Student Grade is : <span id="dgrade"></span></li>
+      <li>Languages Known : <span id="lngsKnwn"></span></li>
+    </ul>
+  </body>
+</html>
