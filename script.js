@@ -74,3 +74,17 @@ var readUserData = () => {
 
   //document.write("Hello every one")
 };
+
+var reset = () => {
+  console.log("reset called");
+  document.querySelector("#sname").value = "";
+  document.querySelector("#sclass").value = "";
+  document.getElementById("lng_eng").checked = false;
+  document.getElementById("lng_tel").checked = false;
+  document.getElementById("lng_hin").checked = false;
+  document.querySelector("input[name=gender]:checked").checked = false;
+  for (var i = 1; i <= 5; i++) {
+    var idd = "m" + i;
+    document.getElementById(idd).value = "";
+  }
+};

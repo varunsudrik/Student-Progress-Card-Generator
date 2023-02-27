@@ -24,9 +24,9 @@
       </li>
       <li>
         Languages Student know:
-        <input type="checkbox" value="Eng" id="lng_eng" /> English
-        <input type="checkbox" value="Tel" id="lng_tel" /> Telugu
-        <input type="checkbox" value="Hin" id="lng_hin" /> Hindi
+        <input type="checkbox" value="Eng" id="lng_eng" name="lng" /> English
+        <input type="checkbox" value="Tel" id="lng_tel" name="lng" /> Telugu
+        <input type="checkbox" value="Hin" id="lng_hin" name="lng" /> Hindi
       </li>
       <li>
         Gender:
@@ -47,6 +47,7 @@
           value="Generate Progress Card"
           onclick="readUserData()"
         />
+        <button id="reset" onclick="reset()">reset</button>
       </li>
     </ul>
 
